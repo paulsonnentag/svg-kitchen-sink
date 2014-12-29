@@ -1,0 +1,4 @@
+.sass-cache
+_dist
+app/_build
+node_modules
