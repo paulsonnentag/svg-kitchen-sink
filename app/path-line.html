@@ -10,23 +10,21 @@
   <body>
 
     <svg class="graph">
-      <path d="M 20,20 l 200,200" class="path"/>
+      <path d="" class="path" id="path"/>
 
-      <circle r="7" transform="translate(20, 20)" class="handle-1" id="handle-start"/>
-      <circle r="7" transform="translate(220, 220)" class="handle-2" id="handle-end"/>
+      <circle r="7" class="handle-1" id="handle-start"/>
+      <circle r="7" class="handle-2" id="handle-end"/>
     </svg>
 
     <div class="code">
-      <span class="tag">
-        &lt;path <span class="attribute">d</span><span class="symbol">=</span><span class="string">"
-        M <input type="number" id="m-x" value="20" class="input-1"> <input type="number" id="m-y" value="20" class="input-1"><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        l <input type="number" id="l-x" value="200" class="input-2"> <input type="number" id="l-y" value="200" class="input-2"> "
-      </span>
-        /&gt
-      </span>
+      &lt;path d="
+      M <input type="number" id="start-x" value="20" class="input-1">
+        <input type="number" id="start-y" value="20" class="input-1"><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      l <input type="number" id="end-x" value="200" class="input-2">
+        <input type="number" id="end-y" value="200" class="input-2"> "
+      /&gt
     </div>
-
 
     <!-- build:js vendor.js -->
     <script src="../node_modules/baconjs/dist/Bacon.js"></script>
