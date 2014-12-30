@@ -1,0 +1,45 @@
+.graph {
+  width: 100%;
+  height: 250px;
+
+  .handle {
+    stroke: $dark-color;
+    stroke-width: 2px;
+    fill: #fff;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;
+  }
+
+  .is-dragged {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: grabbing;
+  }
+
+  .handle-1 {
+    @extend .handle;
+    fill: $highlight-1;
+  }
+
+  .handle-2 {
+    @extend .handle;
+    fill: $highlight-2;
+  }
+
+  .handle-3 {
+    @extend .handle;
+    fill: $highlight-3;
+  }
+
+  .handle-4 {
+    @extend .handle;
+    fill: $highlight-4;
+  }
+
+  .path {
+    stroke-width: 2px;
+    stroke: $dark-color;
+  }
+
+}

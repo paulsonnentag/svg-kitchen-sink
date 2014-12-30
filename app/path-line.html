@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>path line</title>
+    <!-- build:css style.css -->
+    <link rel="stylesheet" href="_build/styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    <svg class="graph">
+      <path d="M 20,20 l 200,200" class="path"/>
+
+      <circle r="7" transform="translate(20, 20)" class="handle-1" id="handle-start"/>
+      <circle r="7" transform="translate(220, 220)" class="handle-2" id="handle-end"/>
+    </svg>
+
+    <div class="code">
+      <span class="tag">
+        &lt;path <span class="attribute">d</span><span class="symbol">=</span><span class="string">"
+        M <input type="number" id="m-x" value="20" class="input-1"> <input type="number" id="m-y" value="20" class="input-1"><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        l <input type="number" id="l-x" value="200" class="input-2"> <input type="number" id="l-y" value="200" class="input-2"> "
+      </span>
+        /&gt
+      </span>
+    </div>
+
+
+    <!-- build:js vendor.js -->
+    <script src="../node_modules/baconjs/dist/Bacon.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js path.js -->
+    <script src="_build/src/path.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>
